@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.fullcycle.admin.catalogo.infrastructure.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-17T14:30:43" hostname="N979TIINOV03" time="0.034">
+<testsuite name="com.fullcycle.admin.catalogo.infrastructure.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-17T17:59:09" hostname="N979TIINOV03" time="0.018">
   <properties/>
-  <testcase name="testMain()" classname="com.fullcycle.admin.catalogo.infrastructure.MainTest" time="0.034"/>
+  <testcase name="testMain()" classname="com.fullcycle.admin.catalogo.infrastructure.MainTest" time="0.018"/>
   <system-out><![CDATA[Hello world!
-com.fullcycle.admin.catalogo.domain.Category@1e6a3214
+com.fullcycle.admin.catalogo.domain.category.Category@eb93fc66
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
