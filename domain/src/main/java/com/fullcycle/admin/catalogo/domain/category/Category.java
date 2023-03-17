@@ -4,7 +4,6 @@ import com.fullcycle.admin.catalogo.domain.AggregateRoot;
 import com.fullcycle.admin.catalogo.domain.validation.ValidationHandler;
 
 import java.time.Instant;
-import java.util.UUID;
 
 public class Category extends AggregateRoot<CategoryID> {
 
@@ -42,6 +41,34 @@ public class Category extends AggregateRoot<CategoryID> {
     @Override
     public void validate(final ValidationHandler handler) {
         new CategoryValidator(this, handler).validate();
+    }
+
+    public Category deactivate() {
+        if(getDeletedAt() == null){
+            this.deletedAt = Instant.now();
+        }
+        this.active = false;
+        this.updatedAt = Instant.now();
+        return this;
+    }
+
+    public Category update(final String aName, final String aDescription, final boolean isActive) {
+        this.name = aName;
+        this.description = aDescription;
+        if (isActive) {
+            activate();
+        }else {
+            deactivate();
+        }
+        this.updatedAt = Instant.now();
+        return this;
+    }
+
+    public Category activate(){
+        this.deletedAt = null;
+        this.active = true;
+        this.updatedAt = Instant.now();
+        return this;
     }
 
     public CategoryID getId() {

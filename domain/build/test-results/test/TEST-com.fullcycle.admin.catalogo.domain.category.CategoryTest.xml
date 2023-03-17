@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.fullcycle.admin.catalogo.domain.category.CategoryTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-17T18:13:23" hostname="N979TIINOV03" time="0.062">
+<testsuite name="com.fullcycle.admin.catalogo.domain.category.CategoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-17T19:03:28" hostname="N979TIINOV03" time="0.02">
   <properties/>
-  <testcase name="givenAValidFalseIsActive_whenCallNewCategoryAndValidate_thenShouldOk()" classname="com.fullcycle.admin.catalogo.domain.category.CategoryTest" time="0.043"/>
-  <testcase name="givenValidParams_whenCallNewCategory_thenInstantiateCategory()" classname="com.fullcycle.admin.catalogo.domain.category.CategoryTest" time="0.002"/>
-  <testcase name="givenAnInvalidEmptyName_whenCallNewCategoryAndValidate_thenShouldReturnError()" classname="com.fullcycle.admin.catalogo.domain.category.CategoryTest" time="0.003"/>
-  <testcase name="givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReturnError()" classname="com.fullcycle.admin.catalogo.domain.category.CategoryTest" time="0.002"/>
-  <testcase name="givenAnInvaliNameLessThan3_whenCallNewCategoryAndValidate_thenShouldReturnError()" classname="com.fullcycle.admin.catalogo.domain.category.CategoryTest" time="0.002"/>
-  <testcase name="givenAnValidEmptyDescription_whenCallNewCategoryAndValidate_thenShouldEmpty()" classname="com.fullcycle.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
-  <testcase name="givenAnInvaliNameMoreThan255_whenCallNewCategoryAndValidate_thenShouldReturnError()" classname="com.fullcycle.admin.catalogo.domain.category.CategoryTest" time="0.002"/>
+  <testcase name="givenAValidCategory_whenCallUpdateInactive_thenReturnCategoryUpdated()" classname="com.fullcycle.admin.catalogo.domain.category.CategoryTest" time="0.02"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
